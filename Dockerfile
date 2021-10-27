@@ -16,7 +16,16 @@ USER jovyan
 #     conda config --add channels auto &&\
 #     conda config --add channels letaylor
 
-RUN pip install -r requirements.txt
+RUN pip intall scanpy==1.7.0
+RUN pip intall matplotlib==3.3.4
+RUN pip intall numpy==1.20.1
+RUN pip intall scipy==1.6.0
+RUN pip intall pandas==1.2.2
+RUN pip intall seaborn==0.11.1
+RUN pip intall scrublet==0.2.3
+RUN pip intall xlsxwriter==1.4.4
+RUN pip intall leidenalg==0.8.7
+RUN pip intall networkx==2.5
 
 # Install apart because it is giving problems or do not exist in conda
 # RUN pip install bbknn==1.5.1
