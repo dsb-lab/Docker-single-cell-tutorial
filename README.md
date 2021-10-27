@@ -4,15 +4,15 @@ Docker file for doing a minimal tutorial on single cell analysis.
 
 The packages explicitly installed in this image are:
 
-> scanpy==1.7.0
-> matplotlib==3.3.4
-> numpy==1.20.1
-> scipy==1.6.0
-> pandas==1.2.2
-> seaborn==0.11.1
-> scrublet==0.2.3
-> xlsxwriter==1.4.4
-> leidenalg==0.8.7
+> scanpy==1.7.0\
+> matplotlib==3.3.4\
+> numpy==1.20.1\
+> scipy==1.6.0\
+> pandas==1.2.2\
+> seaborn==0.11.1\
+> scrublet==0.2.3\
+> xlsxwriter==1.4.4\
+> leidenalg==0.8.7\
 > networkx==2.5
 
 ## 1. Building the docker

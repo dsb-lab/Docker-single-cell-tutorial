@@ -9,14 +9,14 @@ RUN apt-get -y install gcc git
 USER jovyan
 
 #Install requirement packages
-RUN conda config --add channels bioconda &&\
-    conda config --add channels defaults &&\
-    conda config --add channels conda-forge &&\
-    conda config --add channels powerai &&\
-    conda config --add channels auto &&\
-    conda config --add channels letaylor
+# RUN conda config --add channels bioconda &&\
+#     conda config --add channels defaults &&\
+#     conda config --add channels conda-forge &&\
+#     conda config --add channels powerai &&\
+#     conda config --add channels auto &&\
+#     conda config --add channels letaylor
 
-RUN conda install --file requirements.txt
+RUN pip install -r requirements.txt
 
 # Install apart because it is giving problems or do not exist in conda
 # RUN pip install bbknn==1.5.1
